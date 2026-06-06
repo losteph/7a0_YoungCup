@@ -180,73 +180,73 @@ header .hwrap{max-width:1100px;margin:0 auto;padding:0 16px;display:flex;align-i
 // --- DATI DEI GIOCATORI ---
 const DATA = [
   // WILD BOYS (Maglia Bianca)
-  ["Pierluigi De Marco", "wild boys", 2026, ["POR"], 80, false],
-  ["Andrea Fundone", "wild boys", 2026, ["DIF"], 77, false],
-  ["Michele Scoppio", "wild boys", 2026, ["DIF"], 67, false],
-  ["Fabrizio Lorini", "wild boys", 2026, ["DIF"], 64, false],
-  ["Luigi Vaira", "wild boys", 2026, ["DIF"], 71, false], 
-  ["Alessandro del Giudice", "wild boys", 2026, ["CC"], 75, false],
-  ["Lorenzo Milfa", "wild boys", 2026, ["CC"], 86, false],
-  ["Lorenzo Gentile", "wild boys", 2026, ["ATT"], 88, true],
-  ["Carlo Basile", "wild boys", 2026, ["ATT"], 64, false],
-  ["Domenico Jr. Centrone", "wild boys", 2026, ["DIF", "CC", "ATT"], 83, false],
+  ["Pierluigi De Marco", "wild boys", 2026, ["POR"], 82, false, 1],
+  ["Andrea Fundone", "wild boys", 2026, ["DIF"], 77, false, 69],
+  ["Michele Scoppio", "wild boys", 2026, ["DIF"], 67, false, 88],
+  ["Fabrizio Lorini", "wild boys", 2026, ["DIF"], 64, false, 8],
+  ["Luigi Vaira", "wild boys", 2026, ["DIF"], 71, false, 24], 
+  ["Alessandro del Giudice", "wild boys", 2026, ["CC"], 75, false, 17],
+  ["Lorenzo Milfa", "wild boys", 2026, ["CC"], 86, false, 10],
+  ["Lorenzo Gentile", "wild boys", 2026, ["ATT"], 88, true, 9],
+  ["Carlo Basile", "wild boys", 2026, ["ATT"], 64, false, 27],
+  ["Domenico Jr. Centrone", "wild boys", 2026, ["DIF", "CC", "ATT"], 83, false, 7],
 
   // SANGU FC (Maglia Nera)
-  ["Pasquale Iannelli", "sangu FC", 2026, ["POR"], 83, true],
-  ["Matteo Daniele", "sangu FC", 2026, ["DIF"], 83, false],
-  ["Gabriele Pedacchio", "sangu FC", 2026, ["DIF"], 70, false],
-  ["Gerardo Teutonico", "sangu FC", 2026, ["DIF"], 76, false],
-  ["Giovanni Corso", "sangu FC", 2026, ["DIF"], 63, false],
-  ["Daniel Sandu", "sangu FC", 2026, ["CC"], 81, false],
-  ["Mattia Ieva", "sangu FC", 2026, ["CC"], 82, false],
-  ["Mattia Pandolfi", "sangu FC", 2026, ["ATT"], 80, false],
-  ["Angelo Anatilopan", "sangu FC", 2026, ["ATT"], 73, false],
-  ["Dylan Todisco", "sangu FC", 2026, ["DIF", "CC", "ATT"], 78, false],
+  ["Pasquale Iannelli", "sangu FC", 2026, ["POR"], 83, true, 1],
+  ["Matteo Daniele", "sangu FC", 2026, ["DIF"], 83, false, 45],
+  ["Gabriele Pedacchio", "sangu FC", 2026, ["DIF"], 70, false, 14],
+  ["Gerardo Teutonico", "sangu FC", 2026, ["DIF"], 76, false, 27],
+  ["Giovanni Corso", "sangu FC", 2026, ["DIF"], 63, false, 3],
+  ["Daniel Sandu", "sangu FC", 2026, ["CC"], 81, false, 7],
+  ["Mattia Ieva", "sangu FC", 2026, ["CC"], 83, false, 21],
+  ["Mattia Pandolfi", "sangu FC", 2026, ["ATT"], 80, false, 11],
+  ["Angelo Anatilopan", "sangu FC", 2026, ["ATT"], 73, false, 9],
+  ["Dylan Todisco", "sangu FC", 2026, ["DIF", "CC", "ATT"], 78, false, 10],
 
   // MARLBORO GOAL (Maglia Rossa)
-  ["Gabriele Maci", "marlboro goal", 2026, ["POR"], 85, true],
-  ["Gianluca Audiello", "marlboro goal", 2026, ["DIF"], 63, false],
-  ["Cataldo Sapio", "marlboro goal", 2026, ["DIF"], 80, true],
-  ["Giuseppe Pepe", "marlboro goal", 2026, ["DIF"], 75, false],
-  ["Marco Montrano", "marlboro goal", 2026, ["CC"], 81, true],
-  ["Riccardo Roscica", "marlboro goal", 2026, ["CC"], 64, false],
-  ["Adriano Pio Darcangelo", "marlboro goal", 2026, ["ATT"], 73, false],
-  ["Cosimo D'Onghia", "marlboro goal", 2026, ["ATT"], 75, false],
-  ["Michele Ventola", "marlboro goal", 2026, ["CC", "ATT"], 89, true],
+  ["Gabriele Maci", "marlboro goal", 2026, ["POR"], 85, true, 00],
+  ["Gianluca Audiello", "marlboro goal", 2026, ["DIF"], 63, false, 15],
+  ["Cataldo Sapio", "marlboro goal", 2026, ["DIF"], 80, true, 6],
+  ["Giuseppe Pepe", "marlboro goal", 2026, ["DIF"], 75, false, 27],
+  ["Marco Montrano", "marlboro goal", 2026, ["CC"], 81, true, 22],
+  ["Riccardo Roscica", "marlboro goal", 2026, ["CC"], 64, false, 28],
+  ["Adriano Pio Darcangelo", "marlboro goal", 2026, ["ATT"], 73, false, 18],
+  ["Cosimo D'Onghia", "marlboro goal", 2026, ["ATT"], 75, false, 9],
+  ["Michele Ventola", "marlboro goal", 2026, ["CC", "ATT"], 89, true, 10],
 
   // REAL MYDRIP (Maglia Gialla)
-  ["Vincenzo Russo", "real mydrip", 2026, ["POR"], 81, false],
-  ["Stefano Di Lena", "real mydrip", 2026, ["DIF"], 66, false],
-  ["Marco Accetta", "real mydrip", 2026, ["DIF"], 82, false],
-  ["Mario Mezzina", "real mydrip", 2026, ["DIF"], 64, false],
-  ["Alessandro Solazzo", "real mydrip", 2026, ["CC"], 86, false],
-  ["Giovanni Meuli", "real mydrip", 2026, ["CC"], 78, false],
-  ["Manuel Flores", "real mydrip", 2026, ["ATT"], 85, true],
-  ["Mauro Origlia", "real mydrip", 2026, ["ATT"], 65, false],
-  ["Luigi Barbone", "real mydrip", 2026, ["DIF", "ATT", "CC"], 75, false],
+  ["Vincenzo Russo", "real mydrip", 2026, ["POR"], 80, false, 1],
+  ["Stefano Di Lena", "real mydrip", 2026, ["DIF"], 69, false, 7],
+  ["Marco Accetta", "real mydrip", 2026, ["DIF"], 82, false, 45],
+  ["Mario Mezzina", "real mydrip", 2026, ["DIF"], 65, false, 29],
+  ["Alessandro Solazzo", "real mydrip", 2026, ["CC"], 86, false, 8],
+  ["Giovanni Meuli", "real mydrip", 2026, ["CC"], 78, false, 5],
+  ["Manuel Flores", "real mydrip", 2026, ["ATT"], 85, true, 11],
+  ["Mauro Origlia", "real mydrip", 2026, ["ATT"], 65, false, 10],
+  ["Luigi Barbone", "real mydrip", 2026, ["DIF", "ATT", "CC"], 75, false, 16],
 
   // TRIGLODITI (Maglia Turchese)
-  ["Matia Shehu", "trigloditi", 2026, ["POR"], 77, false],
-  ["Luca Padovano", "trigloditi", 2026, ["DIF"], 76, false],
-  ["Stefano Vidali", "trigloditi", 2026, ["DIF"], 73, false],
-  ["Andrea Capuzzolo", "trigloditi", 2026, ["DIF"], 70, false],
-  ["Francesco Albanese", "trigloditi", 2026, ["DIF"], 71, false],
-  ["Gianluca Chiappinelli", "trigloditi", 2026, ["CC"], 87, true],
-  ["Francesco Santamaria", "trigloditi", 2026, ["CC"], 77, false],
-  ["Raffaele Guerra", "trigloditi", 2026, ["ATT"], 78, false],
-  ["Mattia Mavelli", "trigloditi", 2026, ["ATT", "DIF"], 69, false],
-  ["Marco Amodio", "trigloditi", 2026, ["CC", "ATT"], 79, false],
+  ["Matia Shehu", "trigloditi", 2026, ["POR"], 77, false, 13],
+  ["Luca Padovano", "trigloditi", 2026, ["DIF"], 73, false, 7],
+  ["Stefano Vidali", "trigloditi", 2026, ["DIF"], 71, false, 2],
+  ["Andrea Capuzzolo", "trigloditi", 2026, ["DIF"], 67, false, 90],
+  ["Francesco Albanese", "trigloditi", 2026, ["DIF"], 71, false, 20],
+  ["Gianluca Chiappinelli", "trigloditi", 2026, ["CC"], 87, true, 10],
+  ["Francesco Santamaria", "trigloditi", 2026, ["CC"], 75, false, 69],
+  ["Raffaele Guerra", "trigloditi", 2026, ["ATT"], 78, false, 9],
+  ["Mattia Mavelli", "trigloditi", 2026, ["ATT", "DIF"], 69, false, 22],
+  ["Marco Amodio", "trigloditi", 2026, ["CC", "ATT"], 77, false, 11],
 
   // IMPERIAL SEVEN (Maglia Verde)
-  ["Alessandro Guerra", "imperial seven", 2026, ["POR"], 84, true],
-  ["Fabiano Tafaro", "imperial seven", 2026, ["DIF"], 78, false],
-  ["Mario Rizzo", "imperial seven", 2026, ["DIF"], 80, false],
-  ["Gabriele Ferrandino", "imperial seven", 2026, ["DIF"], 85, false],
-  ["Antonio Iasiello", "imperial seven", 2026, ["CC"], 79, false],
-  ["Matteo Sembenini", "imperial seven", 2026, ["CC"], 71, false],
-  ["Flavio Carbone", "imperial seven", 2026, ["ATT"], 84, false],
-  ["Antonio Fuzio", "imperial seven", 2026, ["ATT"], 77, false],
-  ["JJ Zigrino", "imperial seven", 2026, ["DIF", "CC", "ATT"], 86, true]
+  ["Alessandro Guerra", "imperial seven", 2026, ["POR"], 81, true, 1],
+  ["Fabiano Tafaro", "imperial seven", 2026, ["DIF"], 71, false, 11],
+  ["Mario Rizzo", "imperial seven", 2026, ["DIF"], 78, false, 6],
+  ["Gabriele Ferrandino", "imperial seven", 2026, ["DIF"], 85, false, 2],
+  ["Antonio Iasiello", "imperial seven", 2026, ["CC"], 79, false, 77],
+  ["Matteo Sembenini", "imperial seven", 2026, ["CC"], 71, false, 7],
+  ["Flavio Carbone", "imperial seven", 2026, ["ATT"], 84, false, 10],
+  ["Antonio Fuzio", "imperial seven", 2026, ["ATT"], 77, false, 69],
+  ["JJ Zigrino", "imperial seven", 2026, ["DIF", "CC", "ATT"], 86, true, 5]
 ];
 
 const META = {
@@ -326,11 +326,11 @@ const POS_INFO = {
   ATT: {grp:'ATT'}
 };
 
-const players=DATA.map(d=>({name:d[0],team:d[1],year:d[2],positions:d[3],force:d[4],star:d[5]||false}));
+const players=DATA.map(d=>({name:d[0],team:d[1],year:d[2],positions:d[3],force:d[4],star:d[5]||false, number:d[6]||99}));
 const teamMap={};
 players.forEach(p=>{const k=p.team+' '+p.year;(teamMap[k]=teamMap[k]||[]).push(p);});
 const teamKeys=Object.keys(teamMap);
-const rivalPlayers=RIVAL_DATA.map(d=>({name:d[0],team:d[1],year:d[2],positions:d[3],force:d[4]}));
+const rivalPlayers=RIVAL_DATA.map(d=>({name:d[0],team:d[1],year:d[2],positions:d[3],force:d[4], number:d[6]||99}));
 const rivalMap={};
 rivalPlayers.forEach(p=>{const k=p.team+' '+p.year;(rivalMap[k]=rivalMap[k]||[]).push(p);});
 
@@ -372,7 +372,7 @@ function renderPlayerList(){
       const slots=acceptingSlots(p);
       const disabled=already||slots.length===0;
       const el=document.createElement('div');el.className='pitem'+(already?' used':(disabled?' disabled':''));
-      el.innerHTML=`<span class="pf">${p.force}</span><span class="pn">${p.name}${already?' ✓':''}</span><span class="pp">${p.positions.join('/')}</span>`;
+      el.innerHTML=`<span class="pf">${p.number}</span><span class="pn">${p.name}${already?' ✓':''}</span><span class="pp">${p.positions.join('/')}</span>`;
       if(!disabled)el.onclick=()=>choosePlayer(p);
       list.appendChild(el);
     });
@@ -388,7 +388,7 @@ function choosePlayer(p){
   const labOptions=Object.keys(byLab); 
   if(labOptions.length===1){ placePlayer(p, byLab[labOptions[0]][0].id); return; }
   pendingPlayer=p;
-  document.getElementById('pkTitle').textContent=p.name+' · '+p.force;
+  document.getElementById('pkTitle').textContent=p.name+' · '+p.number;
   document.getElementById('pkSub').textContent='Scegli in che zona schierarlo:';
   const opts=document.getElementById('pkOpts');opts.innerHTML='';
   labOptions.forEach(lab=>{
@@ -441,7 +441,7 @@ function buildSlot(s){
   const isTarget=!p&&!mustDraw&&currentTeam;
   const slot=document.createElement('div');slot.className='slot'+(p?' filled':'')+(isTarget?' target':'');
   if(s.dy)slot.style.transform=`translateY(${s.dy}px)`;
-  slot.innerHTML=`<div class="circle">${p?p.force:''}</div>`+(p?`<div class="nm">${p.name}</div>`:`<div class="pos-lab">${s.lab}</div>`);
+  slot.innerHTML=`<div class="circle">${p?p.number:''}</div>`+(p?`<div class="nm">${p.name}</div>`:`<div class="pos-lab">${s.lab}</div>`);
   return slot;
 }
 function calcLine(mainArr,midArr){let sum=0,w=0;mainArr.forEach(f=>{sum+=f;w+=1;});midArr.forEach(f=>{sum+=f*0.5;w+=0.5;});return w>0?sum/w:0;}
@@ -461,7 +461,7 @@ function computeRatings(){
   chem=Math.min(chem,3.0);attack+=chem;defense+=chem;
   return {attack:Math.round(attack),defense:Math.round(defense),overall:Math.round((attack+defense)/2),count:gk.length+def.length+mid.length+att.length,chem:Math.round(chem*10)/10};
 }
-function renderBox(){const r=computeRatings();document.getElementById('bsOverall').textContent=r.count?r.overall:'—';document.getElementById('bsAtk').textContent=r.count?r.attack:'—';document.getElementById('bsDef').textContent=r.count?r.defense:'—';document.getElementById('fillCount').textContent=r.count+'/'+FORM_SLOTS[formation].length;const list=document.getElementById('bsList');list.innerHTML='';FORM_SLOTS[formation].forEach(s=>{const p=lineup[s.id];const row=document.createElement('div');row.className='bs-row'+(p?'':' empty')+((p&&p.star)?' star-row':'');row.innerHTML=`<span class="bp">${s.lab}</span><span class="bn">${p?p.name:'—'}${(p&&p.star)?' <span class=\'star-badge\'>★</span>':''}</span><span class="bf">${p?p.force:''}</span>`;list.appendChild(row);});const full=r.count===FORM_SLOTS[formation].length;document.getElementById('simBtn').disabled=!full;document.getElementById('simHint').innerHTML=full?(r.chem>0?`Premi Simula · Chimica +${r.chem} 🔗`:'Squadra completa! Premi Simula.'):`Completa i ${FORM_SLOTS[formation].length} per simulare.`;}
+function renderBox(){const r=computeRatings();document.getElementById('bsOverall').textContent=r.count?r.overall:'—';document.getElementById('bsAtk').textContent=r.count?r.attack:'—';document.getElementById('bsDef').textContent=r.count?r.defense:'—';document.getElementById('fillCount').textContent=r.count+'/'+FORM_SLOTS[formation].length;const list=document.getElementById('bsList');list.innerHTML='';FORM_SLOTS[formation].forEach(s=>{const p=lineup[s.id];const row=document.createElement('div');row.className='bs-row'+(p?'':' empty')+((p&&p.star)?' star-row':'');row.innerHTML=`<span class="bp">${s.lab}</span><span class="bn">${p?p.name:'—'}${(p&&p.star)?' <span class=\'star-badge\'>★</span>':''}</span><span class="bf">${p?p.number:''}</span>`;list.appendChild(row);});const full=r.count===FORM_SLOTS[formation].length;document.getElementById('simBtn').disabled=!full;document.getElementById('simHint').innerHTML=full?(r.chem>0?`Premi Simula · Chimica +${r.chem} 🔗`:'Squadra completa! Premi Simula.'):`Completa i ${FORM_SLOTS[formation].length} per simulare.`;}
 function poisson(lambda){const L=Math.exp(-lambda);let k=0,p=1;do{k++;p*=Math.random();}while(p>L);return k-1;}
 const RANKED=Object.entries(RIVAL_META).map(([k,m])=>({key:k,pond:m.pond,bg:m.bg,text:m.text,team:m.team,year:m.year})).sort((a,b)=>a.pond-b.pond);
 
@@ -643,7 +643,7 @@ function showSquad(){
       <span style="font-family:'Barlow Condensed';font-weight:700;color:#8a8067;width:34px;font-size:.8rem">${s.lab}</span>
       <span style="flex:1;font-weight:${p.star?'700':'600'};color:${p.star?'#7a5c00':'inherit'}">${p.name}${p.star?' <span style=\'color:#e3b945\'>★</span>':''}</span>
       <span style="font-family:'Barlow Condensed';font-size:.72rem;font-weight:700;padding:1px 7px;border-radius:8px;background:${cm.bg};color:${cm.text};border:1px solid rgba(0,0,0,.12)">${p.team}</span>
-      <span style="font-family:'Anton';color:var(--red);width:30px;text-align:right">${p.force}</span>
+      <span style="font-family:'Anton';color:var(--red);width:30px;text-align:right">${p.number}</span>
     </div>`;
   });
   html+=`</div>`;
