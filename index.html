@@ -541,8 +541,8 @@ function pickRivalByPond(t,ex){
   const top=cand.slice(0,2); 
   return top[Math.floor(Math.random()*top.length)].x;
 }
-const GROUP_TARGETS=[80,82,85];            
-const KO_DEFS=[{name:'Semifinale',pondTarget:86},{name:'Finale',pondTarget:88}];
+const GROUP_TARGETS=[80, 80, 80, 80, 80, 80];            
+const KO_DEFS=[];
 const DERROTEROS=["Fino a qui è arrivata la tua squadra.", "Usciti a testa alta.", "La palla è rotonda.", "Maledetti rigori..."];
 function derrotero(){return DERROTEROS[Math.floor(Math.random()*DERROTEROS.length)];}
 function playMatch(myAtk,myDef,rf,koMode){
@@ -571,11 +571,40 @@ function openDTPick(){
   });
   document.getElementById('dtPicker').classList.add('show');
 }
-function simulate(){
-  if(RANKED.length < 5) {
-     alert("ATTENZIONE: Devi inserire almeno 5 squadre in RIVAL_META e RIVAL_DATA per far funzionare il torneo!");
-     return;
+function simulate() {
+  const r = computeRatings(), myAtk = r.attack, myDef = r.defense;
+  let matches = [];
+  const used = new Set();
+  let pts = 0, gGF = 0, gGA = 0;
+  
+  // Il ciclo fa 6 partite, una per ogni avversario
+  for(let i = 0; i < 6; i++) {
+    const rival = pickRivalByPond(80, used);
+    used.add(rival.key);
+    const m = playMatch(myAtk, myDef, rival.pond, false);
+    gGF += m.gFor; gGA += m.gAg;
+    
+    if(m.adv === true) pts += 3;
+    else if(m.adv === null) pts += 1;
+    
+    matches.push({
+      phase: 'Giornata ' + (i + 1),
+      rival: rival.team,
+      gf: m.gFor, ga: m.gAg,
+      outcome: m.adv === true ? 'win' : (m.adv === false ? 'lost' : 'draw'),
+      advanced: true
+    });
   }
+
+  // Risultato finale: calcolo posizionamento basato sui punti (max 18)
+  let pos = pts >= 15 ? 1 : (pts >= 12 ? 2 : (pts >= 9 ? 3 : 4));
+  
+  showResults({
+    gf: gGF, ga: gGA, matches, champion: (pos === 1), overall: r.overall,
+    group: { pts, pos: pos, classified: true },
+    koWins: 0
+  });
+}
   const r=computeRatings(),myAtk=r.attack,myDef=r.defense;
   let gf=0,ga=0,matches=[];const used=new Set();
   let pts=0,gWins=0,gDraws=0,gLoss=0,gGF=0,gGA=0;
