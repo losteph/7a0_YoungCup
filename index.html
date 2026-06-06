@@ -182,76 +182,73 @@ header .hwrap{max-width:1100px;margin:0 auto;padding:0 16px;display:flex;align-i
 // -------------------------------------------------------------
 const DATA = [
   // WILD BOYS (Maglia Bianca)
-  ["Leo 'Saracinesca'", "wild boys", 2026, ["POR"], 82, false],
-  ["Ale 'Muro'", "wild boys", 2026, ["DC", "DCS"], 84, false],
-  ["Fra 'Pendolino'", "wild boys", 2026, ["TS", "ES"], 79, false],
-  ["Marco 'Treno'", "wild boys", 2026, ["TD", "ED"], 81, false],
-  ["Dani 'Il Maestro'", "wild boys", 2026, ["CC", "CD", "CS"], 88, true], // Stella
-  ["Simo 'Trattore'", "wild boys", 2026, ["CC"], 77, false],
-  ["Gio 'Furetto'", "wild boys", 2026, ["ED", "CD"], 80, false],
-  ["Andrea 'Cecchino'", "wild boys", 2026, ["ATT"], 85, false],
-  ["Nico 'Rapace'", "wild boys", 2026, ["ATT"], 76, false],
-  ["Pippo 'Riserva'", "wild boys", 2026, ["POR"], 74, false],
+  ["Pierluigi De Marco'", "wild boys", 2026, ["POR"], 80, false],
+  ["Andrea Fundone", "wild boys", 2026, ["DC", "DCS"], 84, false],
+  ["Michele Scoppio", "wild boys", 2026, ["TS", "ES"], 79, false],
+  ["Fabrizio Lorini", "wild boys", 2026, ["TD", "ED"], 81, false],
+  ["Luigi Vaira", "wild boys", 2026, ["CC", "CD", "CS"], 88, false], 
+  ["Alessandro del Giudice", "wild boys", 2026, ["CC"], 77, false],
+  ["Lorenzo Milfa", "wild boys", 2026, ["ED", "CD"], 80, true],
+  ["Lorenzo Gentile", "wild boys", 2026, ["ATT"], 85, true],
+  ["Carlo Basile", "wild boys", 2026, ["ATT"], 76, false],
+  ["Domenico Jr. Centrone", "wild boys", 2026, ["POR"], 74, false],
 
   // SANGU FC (Maglia Nera)
-  ["Gianlu 'Ragno'", "sangu FC", 2026, ["POR"], 85, false],
-  ["Max 'Macellaio'", "sangu FC", 2026, ["DC", "DCD"], 86, true], // Stella
-  ["Fede 'Tackle'", "sangu FC", 2026, ["DCS", "TS"], 82, false],
-  ["Tommy 'Corsa'", "sangu FC", 2026, ["TD", "CC"], 78, false],
-  ["Lollo 'Polmone'", "sangu FC", 2026, ["CC"], 84, false],
-  ["Edo 'Visione'", "sangu FC", 2026, ["CS", "CC"], 81, false],
-  ["Ricky 'Estro'", "sangu FC", 2026, ["ES", "ATT"], 83, false],
-  ["Mati 'Boa'", "sangu FC", 2026, ["ATT"], 80, false],
-  ["Samu 'Punta'", "sangu FC", 2026, ["ATT"], 77, false],
-  ["Davide 'Gatto'", "sangu FC", 2026, ["POR"], 75, false],
+  ["Pasquale Iannelli", "sangu FC", 2026, ["POR"], 85, false],
+  ["Matteo Daniele", "sangu FC", 2026, ["DC", "DCD"], 86, true], // Stella
+  ["Gabriele Pedacchio", "sangu FC", 2026, ["DCS", "TS"], 82, false],
+  ["Gerardo Teutonico", "sangu FC", 2026, ["TD", "CC"], 78, false],
+  ["Giovanni Corso", "sangu FC", 2026, ["CC"], 84, false],
+  ["Daniel Sandu", "sangu FC", 2026, ["CS", "CC"], 81, false],
+  ["Mattia Ieva", "sangu FC", 2026, ["ES", "ATT"], 83, false],
+  ["Mattia Pandolfi", "sangu FC", 2026, ["ATT"], 80, false],
+  ["Angelo Anatilopan", "sangu FC", 2026, ["ATT"], 77, false],
+  ["Dylan Todisco", "sangu FC", 2026, ["POR"], 75, false],
 
   // MARLBORO GOAL (Maglia Rossa)
-  ["Gigi 'Smoker'", "marlboro goal", 2026, ["POR"], 79, false],
-  ["Vale 'Fumo'", "marlboro goal", 2026, ["DC"], 81, false],
-  ["Cata 'Catena'", "marlboro goal", 2026, ["DCD", "TD"], 78, false],
-  ["Lore 'Zingaro'", "marlboro goal", 2026, ["DCS", "TS"], 76, false],
-  ["Pietro 'Soffio'", "marlboro goal", 2026, ["CC", "CD"], 85, true], // Stella
-  ["Vince 'Zanzara'", "marlboro goal", 2026, ["CC", "CS"], 82, false],
-  ["Salvo 'Scatto'", "marlboro goal", 2026, ["ED", "ATT"], 80, false],
-  ["Giaco 'Bomber'", "marlboro goal", 2026, ["ATT"], 84, false],
-  ["Enri 'Sponda'", "marlboro goal", 2026, ["ATT"], 79, false],
-  ["Alfio 'Panca'", "marlboro goal", 2026, ["DC", "CC"], 75, false],
+  ["Gabriele Maci", "marlboro goal", 2026, ["POR"], 79, false],
+  ["Gianluca Audiello", "marlboro goal", 2026, ["DC"], 81, false],
+  ["Cataldo Sapio", "marlboro goal", 2026, ["DCD", "TD"], 78, false],
+  ["Giuseppe Pepe", "marlboro goal", 2026, ["DCS", "TS"], 76, false],
+  ["Marco Montrano", "marlboro goal", 2026, ["CC", "CD"], 85, true], // Stella
+  ["Riccardo Roscica", "marlboro goal", 2026, ["CC", "CS"], 82, false],
+  ["Adriano Pio Darcangelo", "marlboro goal", 2026, ["ED", "ATT"], 80, false],
+  ["Cosimo D'Onghia", "marlboro goal", 2026, ["ATT"], 84, false],
+  ["Michele Ventola", "marlboro goal", 2026, ["ATT"], 79, false],
 
   // REAL MYDRIP (Maglia Gialla)
-  ["Dario 'Style'", "real mydrip", 2026, ["POR"], 81, false],
-  ["Tito 'Elegante'", "real mydrip", 2026, ["DC", "DCS", "DCD"], 85, false],
-  ["Rocco 'Fashion'", "real mydrip", 2026, ["TD", "ED"], 82, false],
-  ["Miki 'Freccia'", "real mydrip", 2026, ["TS", "ES"], 80, false],
-  ["Tony 'Regista'", "real mydrip", 2026, ["CC"], 87, true], // Stella
-  ["Manu 'Dribbling'", "real mydrip", 2026, ["CD", "CC"], 84, false],
-  ["Sebi 'Magia'", "real mydrip", 2026, ["CS", "CC"], 83, false],
-  ["Igor 'Goleador'", "real mydrip", 2026, ["ATT"], 86, false],
-  ["Loris 'Falso Nueve'", "real mydrip", 2026, ["ATT", "CC"], 81, false],
-  ["Yuri 'Vice'", "real mydrip", 2026, ["POR"], 76, false],
+  ["Vincenzo Russo", "real mydrip", 2026, ["POR"], 81, false],
+  ["Stefano Di Lena", "real mydrip", 2026, ["DC", "DCS", "DCD"], 85, false],
+  ["Marco Accetta", "real mydrip", 2026, ["TD", "ED"], 82, false],
+  ["Mario Mezzina", "real mydrip", 2026, ["TS", "ES"], 80, false],
+  ["Alessandro Solazzo", "real mydrip", 2026, ["CC"], 87, true], // Stella
+  ["Giovanni Meuli", "real mydrip", 2026, ["CD", "CC"], 84, false],
+  ["Manuel Flores", "real mydrip", 2026, ["CS", "CC"], 83, false],
+  ["Mauro Origlia", "real mydrip", 2026, ["ATT"], 86, false],
+  ["Luigi Barbone", "real mydrip", 2026, ["ATT", "CC"], 81, false],
 
   // TRIGLODITI (Maglia Turchese)
-  ["Berto 'Clava'", "trigloditi", 2026, ["POR"], 77, false],
-  ["Gino 'Roccia'", "trigloditi", 2026, ["DC"], 83, false],
-  ["Pino 'Tronco'", "trigloditi", 2026, ["DCD", "TD"], 78, false],
-  ["Nino 'Randello'", "trigloditi", 2026, ["DCS", "TS"], 76, false],
-  ["Ugo 'Grezzo'", "trigloditi", 2026, ["CC"], 79, false],
-  ["Lino 'Lotta'", "trigloditi", 2026, ["CC", "CD", "CS"], 81, false],
-  ["Mino 'Cinghiale'", "trigloditi", 2026, ["ATT", "ES"], 84, true], // Stella
-  ["Dino 'Furia'", "trigloditi", 2026, ["ATT"], 80, false],
-  ["Rino 'Mazzata'", "trigloditi", 2026, ["ATT", "ED"], 77, false],
-  ["Tino 'Spalla'", "trigloditi", 2026, ["CC"], 74, false],
+  ["Matia Shehu", "trigloditi", 2026, ["POR"], 77, false],
+  ["Luca Padovano", "trigloditi", 2026, ["DC"], 83, false],
+  ["Stefano Vidali", "trigloditi", 2026, ["DCD", "TD"], 78, false],
+  ["Andrea Capuzzolo", "trigloditi", 2026, ["DCS", "TS"], 76, false],
+  ["Francesco Albanese", "trigloditi", 2026, ["CC"], 79, false],
+  ["Gianluca Chiappinelli", "trigloditi", 2026, ["CC", "CD", "CS"], 81, false],
+  ["Francesco Santamaria", "trigloditi", 2026, ["ATT", "ES"], 84, true], // Stella
+  ["Raffaele Guerra", "trigloditi", 2026, ["ATT"], 80, false],
+  ["Mattia Mavelli", "trigloditi", 2026, ["ATT", "ED"], 77, false],
+  ["Marco Amodio", "trigloditi", 2026, ["CC"], 74, false],
 
   // IMPERIAL SEVEN (Maglia Verde)
-  ["Cesare 'Imperatore'", "imperial seven", 2026, ["POR"], 86, true], // Stella
-  ["Augusto 'Scudo'", "imperial seven", 2026, ["DC", "DCD", "DCS"], 85, false],
-  ["Tiberio 'Coda'", "imperial seven", 2026, ["TD", "TS"], 81, false],
-  ["Nerone 'Fiamma'", "imperial seven", 2026, ["CC"], 84, false],
-  ["Traiano 'Costruttore'", "imperial seven", 2026, ["CC", "CD"], 82, false],
-  ["Adriano 'Muro'", "imperial seven", 2026, ["CS", "CC"], 80, false],
-  ["Marco 'Aurelio'", "imperial seven", 2026, ["ED", "ES"], 83, false],
-  ["Commodo 'Gladio'", "imperial seven", 2026, ["ATT"], 85, false],
-  ["Costantino 'Cruce'", "imperial seven", 2026, ["ATT"], 82, false],
-  ["Giulio 'VeniVidi'", "imperial seven", 2026, ["DCS", "CC"], 78, false]
+  ["Alessandro Guerra", "imperial seven", 2026, ["POR"], 86, true], // Stella
+  ["Fabiano Tafaro", "imperial seven", 2026, ["DC", "DCD", "DCS"], 85, false],
+  ["Mario Rizzo", "imperial seven", 2026, ["TD", "TS"], 81, false],
+  ["Gabriele Ferrandino", "imperial seven", 2026, ["CC"], 84, false],
+  ["Antonio Iasiello", "imperial seven", 2026, ["CC", "CD"], 82, false],
+  ["Matteo Sembenini", "imperial seven", 2026, ["CS", "CC"], 80, false],
+  ["Flavio Carbone", "imperial seven", 2026, ["ED", "ES"], 83, false],
+  ["Antonio Fuzio", "imperial seven", 2026, ["ATT"], 85, false],
+  ["JJ Zigrino", "imperial seven", 2026, ["ATT"], 82, false]
 ];
 
 // -------------------------------------------------------------
